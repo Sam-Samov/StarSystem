@@ -3,7 +3,7 @@ package by.sam.StarSystem.entity;
 
 public class Planet {
    private String planetName;
-   private String[] sputnikArr;
+   private Satellite[] satellitesArr;
 
    public String getPlanetName() {
       return planetName;
@@ -13,11 +13,11 @@ public class Planet {
       this.planetName = planetName;
    }
 
-   public String[] getSputnikArr() {
-      return sputnikArr;
+   public Satellite[] getSatellitesArr() {
+      return satellitesArr;
    }
 
-   public void setSputnikArr(String[] sputnikArr) {
-      this.sputnikArr = sputnikArr;
+   public void setSatellitesArr(Satellite[] satellitesArr) {
+      this.satellitesArr = satellitesArr;
    }
 }

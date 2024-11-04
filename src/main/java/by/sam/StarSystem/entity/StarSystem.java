@@ -2,8 +2,8 @@ package by.sam.StarSystem.entity;
 
 public class StarSystem {
     private String starSystemName;
-    private String[] starsArr;
-    private String[] planetsArr;
+    private Star[] starsArr;
+    private Planet[] planetsArr;
 
     public String getStarSystemName() {
         return starSystemName;
@@ -13,19 +13,19 @@ public class StarSystem {
         this.starSystemName = starSystemName;
     }
 
-    public String[] getStarsArr() {
+    public Star[] getStarsArr() {
         return starsArr;
     }
 
-    public void setStarsArr(String[] starsArr) {
+    public void setStarsArr(Star[] starsArr) {
         this.starsArr = starsArr;
     }
 
-    public String[] getPlanetsArr() {
+    public Planet[] getPlanetsArr() {
         return planetsArr;
     }
 
-    public void setPlanetsArr(String[] planetsArr) {
+    public void setPlanetsArr(Planet[] planetsArr) {
         this.planetsArr = planetsArr;
     }
 }
