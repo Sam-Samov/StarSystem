@@ -1,5 +1,7 @@
 package by.sam.StarSystem.entity;
 
+import java.util.Arrays;
+
 public class StarSystem {
     private String starSystemName;
     private Star[] starsArr;
@@ -27,5 +29,14 @@ public class StarSystem {
 
     public void setPlanetsArr(Planet[] planetsArr) {
         this.planetsArr = planetsArr;
+    }
+
+    @Override
+    public String toString() {
+        return "StarSystem{" +
+                "starSystemName='" + starSystemName + '\'' +
+                ", starsArr=" + Arrays.toString(starsArr) +
+                ", planetsArr=" + Arrays.toString(planetsArr) +
+                '}';
     }
 }

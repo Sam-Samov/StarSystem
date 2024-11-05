@@ -10,4 +10,11 @@ public class Satellite {
     public void setSatelliteName(String satelliteName) {
         this.satelliteName = satelliteName;
     }
+
+    @Override
+    public String toString() {
+        return "Satellite{" +
+                "satelliteName='" + satelliteName + '\'' +
+                '}';
+    }
 }

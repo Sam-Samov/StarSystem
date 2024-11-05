@@ -5,8 +5,6 @@ import by.sam.StarSystem.entity.Satellite;
 import by.sam.StarSystem.entity.Star;
 import by.sam.StarSystem.entity.StarSystem;
 
-import java.util.Arrays;
-
 /*Создать объект класса «Звёздная система», используя классы «Планета», «Звезда», «Луна».
 Методы: 1) выводит на консоль количество планет в звёздной системе,
 2) выводит название звезды,

@@ -13,4 +13,11 @@ public class Star {
     public void setStarName(String starName) {
         this.starName = starName;
     }
+
+    @Override
+    public String toString() {
+        return "Star{" +
+                "starName='" + starName + '\'' +
+                '}';
+    }
 }

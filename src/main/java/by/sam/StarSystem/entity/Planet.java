@@ -1,6 +1,8 @@
 package by.sam.StarSystem.entity;
 
 
+import java.util.Arrays;
+
 public class Planet {
    private String planetName;
    private Satellite[] satellitesArr;
@@ -19,5 +21,13 @@ public class Planet {
 
    public void setSatellitesArr(Satellite[] satellitesArr) {
       this.satellitesArr = satellitesArr;
+   }
+
+   @Override
+   public String toString() {
+      return "Planet{" +
+              "planetName='" + planetName + '\'' +
+              ", satellitesArr=" + Arrays.toString(satellitesArr) +
+              '}';
    }
 }
