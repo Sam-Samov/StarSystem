@@ -6,6 +6,7 @@ import java.util.Arrays;
 public class Planet {
    private String planetName;
    private Satellite[] satellitesArr;
+   private Long mass;
 
    public String getPlanetName() {
       return planetName;
@@ -21,6 +22,14 @@ public class Planet {
 
    public void setSatellitesArr(Satellite[] satellitesArr) {
       this.satellitesArr = satellitesArr;
+   }
+
+   public Long getMass() {
+      return mass;
+   }
+
+   public void setMass(Long mass) {
+      this.mass = mass;
    }
 
    @Override

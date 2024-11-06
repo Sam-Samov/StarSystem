@@ -4,6 +4,7 @@ package by.sam.StarSystem.entity;
    2) выводит название звезды, 3) добавляет планеты в систему.*/
 public class Star {
     private String starName;
+    private Long mass;
 
 
     public String getStarName() {
@@ -12,6 +13,14 @@ public class Star {
 
     public void setStarName(String starName) {
         this.starName = starName;
+    }
+
+    public Long getMass() {
+        return mass;
+    }
+
+    public void setMass(Long mass) {
+        this.mass = mass;
     }
 
     @Override
