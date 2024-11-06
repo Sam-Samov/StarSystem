@@ -33,10 +33,8 @@ public class StarSystem {
 
     @Override
     public String toString() {
-        return "StarSystem{" +
-                "starSystemName='" + starSystemName + '\'' +
-                ", starsArr=" + Arrays.toString(starsArr) +
-                ", planetsArr=" + Arrays.toString(planetsArr) +
-                '}';
+        return "Звёздная система: '" + starSystemName + '\'' + '\n' +
+                "Звёзды: " + '\n' + Arrays.toString(starsArr) + '\n' +
+                "Планеты: " + '\n' + Arrays.toString(planetsArr);
     }
 }

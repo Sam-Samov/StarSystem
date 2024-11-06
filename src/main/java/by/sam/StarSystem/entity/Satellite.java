@@ -2,7 +2,7 @@ package by.sam.StarSystem.entity;
 
 public class Satellite {
     private String satelliteName;
-    private Long mass;
+    private double mass;
 
     public String getSatelliteName() {
         return satelliteName;
@@ -12,18 +12,16 @@ public class Satellite {
         this.satelliteName = satelliteName;
     }
 
-    public Long getMass() {
+    public double getMass() {
         return mass;
     }
 
-    public void setMass(Long mass) {
+    public void setMass(double mass) {
         this.mass = mass;
     }
 
     @Override
     public String toString() {
-        return "Satellite{" +
-                "satelliteName='" + satelliteName + '\'' +
-                '}';
+        return "Спутник: '" + satelliteName + '\'' + "; масса = " + getMass() + " кг" + '\n';
     }
 }

@@ -33,4 +33,15 @@ public class Services {
         satellitesArr[satellitesArr.length - 1] = satellite;
         planet.setSatellitesArr(satellitesArr);
     }
+
+    public void printAmountSatellites(StarSystem starSystem) {
+        int amount = 0;
+        for (int i = 0; i < starSystem.getPlanetsArr().length; i++) {
+            if (starSystem.getPlanetsArr()[i].getSatellitesArr() != null) {
+                int satellitesAmount = starSystem.getPlanetsArr()[i].getSatellitesArr().length;
+                amount = amount + satellitesAmount;
+            }
+        }
+        System.out.println("Количество спутников в системе: " + amount);
+    }
 }

@@ -4,8 +4,7 @@ package by.sam.StarSystem.entity;
    2) выводит название звезды, 3) добавляет планеты в систему.*/
 public class Star {
     private String starName;
-    private Long mass;
-
+    private double mass;
 
     public String getStarName() {
         return this.starName;
@@ -15,18 +14,16 @@ public class Star {
         this.starName = starName;
     }
 
-    public Long getMass() {
+    public double getMass() {
         return mass;
     }
 
-    public void setMass(Long mass) {
+    public void setMass(double mass) {
         this.mass = mass;
     }
 
     @Override
     public String toString() {
-        return "Star{" +
-                "starName='" + starName + '\'' +
-                '}';
+        return "Звезда: '" + starName + '\'' + "; масса = " + getMass() + " кг";
     }
 }

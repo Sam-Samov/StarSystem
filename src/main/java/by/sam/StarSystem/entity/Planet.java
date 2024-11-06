@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Planet {
    private String planetName;
    private Satellite[] satellitesArr;
-   private Long mass;
+   private double mass;
 
    public String getPlanetName() {
       return planetName;
@@ -24,19 +24,17 @@ public class Planet {
       this.satellitesArr = satellitesArr;
    }
 
-   public Long getMass() {
+   public double getMass() {
       return mass;
    }
 
-   public void setMass(Long mass) {
+   public void setMass(double mass) {
       this.mass = mass;
    }
 
    @Override
    public String toString() {
-      return "Planet{" +
-              "planetName='" + planetName + '\'' +
-              ", satellitesArr=" + Arrays.toString(satellitesArr) +
-              '}';
+      return '\n' + "Планета: '" + planetName + '\'' + "; масса = " + getMass() + " кг" + '\n' +
+              "Спутники: " + '\n' + Arrays.toString(satellitesArr);
    }
 }
